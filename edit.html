@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Page</title>
+    <link rel="stylesheet" href="./styles/index.css">
+</head>
+<body>
+    
+    <form id = "form">
+             <div class = "inputLabel">
+             <input type="text" id = "name" , class = "input" placeholder = "Name"/>
+             <label for="name">Name</label>
+             </div>
+
+             <div class = "inputLabel">
+             <input type="text" id = "age" class = "input" placeholder = "Age"/>
+             <label for="age">Age</label>
+             </div>
+
+             <select type="text" id = "gender">
+                   <option value=" " disabled selected >Gender</option>
+                   <option value="male">Male</option>
+                   <option value="female">Female</option>
+                   <option value="others">Others</option>
+             </select>
+
+             <div class = "inputLabel">
+             <input type="text" id = "marks" class = "input" placeholder = "Marks"/>
+             <label for="marks">Marks</label>
+             </div>
+
+             <div class = "inputLabel">
+             <input type="text" id = "cohort" class = "input" placeholder = "Cohort" /> 
+             <label for="cohort">Cohort</label>
+             </div>
+             <div id = "validForm">Please fill the details properly ! </div>
+
+             <input type = "submit" id = "submitBtn" value = "Edit"/>
+
+    </form>
+    </body>
+         <script src = "./scripts/edit.js"></script>
+    </html>

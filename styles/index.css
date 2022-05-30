@@ -99,13 +99,15 @@
    
 }
 
-#studenTable , tr{
+#studentTable{
     border-collapse : collapse;
 }
 
+
 #studentTable  th , td{
-    border : 1px solid red;
+    border : 2px solid  rgba(146, 102, 7, 0.5);
     padding : 10px 20px;
+
 }
 
 

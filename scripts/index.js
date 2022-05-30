@@ -75,12 +75,15 @@ async function displayData(){
           td8.addEventListener("click" , function(){
               deleteFunction(user.id)
               displayData();
-              console.log("hii");
           })
 
           let td9 = document.createElement("td");
           td9.innerText = "Edit";
           td9.style.cursor = "pointer";
+          td9.addEventListener("click" , function(){
+              localStorage.setItem("studentId" , JSON.stringify(user.id));
+              window.location.href = "edit.html"
+          })
           row.append(td1 , td2 , td3 , td4 , td5 , td6 , td7 , td8 , td9);
           document.querySelector("#tableContainer>#studentTable>tbody").append(row);
     })
